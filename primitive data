@@ -1,0 +1,22 @@
+public class main {
+  
+  public static void main(String args[])
+  {
+    boolean flag = false;
+    char ch = 'w';
+    int num = 143287;
+    byte size = 8;
+    short srt = 98;
+    double value = 8.14326513;
+    float temp = 8.9f;
+    long val = 199999998;
+    System.out.println("boolean:" +flag);
+    System.out.println("char:" +ch);
+    System.out.println("int:" +num);
+    System.out.println("byte:" +size);
+    System.out.println("short:" +srt);
+    System.out.println("float:" +value);
+    System.out.println("double:" +temp);
+    System.out.println("long:" +val);
+  }
+}
