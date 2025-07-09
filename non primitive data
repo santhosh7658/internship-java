@@ -9,7 +9,7 @@ public class Main{
   System.out.println(clr);
   System.out.println(str);
   for(int member:arr){
-   System.out.print(member+",");
+   System.out.println(member+",");
   }
 }
 }
