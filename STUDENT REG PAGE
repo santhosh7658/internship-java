@@ -54,7 +54,7 @@
   <label for="mob no">Mobile number:</label><br>
   <input type="num" id="num" name="num" value=""><br><br>
    <button>
-   <a href="file:///C:/Users/sivar/OneDrive/Desktop/STU%20LOG%20PAGE.HTML" class="buton-class">register</a>
+   <a href="file:///C:/Users/sivar/OneDrive/Desktop/HTML%20HTML/STUDENT%20REG%20%20PAGE/STU%20LOG%20PAGE.HTML" class="buton-class">register</a>
 </button>
   </form>
 
@@ -67,7 +67,7 @@
         localStorage.setItem('savedUsername', username);
         localStorage.setItem('savedPassword', password);
         alert('Registered successfully!');
-        window.location.href = 'file:///C:/Users/Vicky/OneDrive/Documents/csttudentlog.html'; // Redirect to login page
+        window.location.href = 'file:///C:/Users/sivar/OneDrive/Desktop/HTML%20HTML/STUDENT%20REG%20%20PAGE/STU%20LOG%20PAGE.HTML'; // Redirect to login page
       } else {
         alert('Please fill both fields.');
       }
