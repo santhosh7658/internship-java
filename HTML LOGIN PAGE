@@ -1,18 +1,65 @@
-<!DOCTYPE>
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 30px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
 <body>
-<h1>Login Page</h1>
-<form action="action_page.php">
-	<label for="uname">user name:</label><br>
-	<input type="text" id="uname" name="uname" value=""><br>
-	<label for="pwd">password:</label><br>
-	<input type="" id="pwd" name="pwd" value=""><br><br>
-	<button>
-  <a href="https://collegedunia.com/college/13523-ganadipathy-tulsis-jain-engineering-college-gtec-vellore"class="button-class">login</a></button>
-</form>
-<img src="C:\Users\sivar\OneDrive\Desktop\HTML\student.jpg">
-<>
-</body>
-</HTML>
+  <form>
+    <h2>Login</h2>
+    <label for="login-username">Username</label>
+    <input type="text" id="login-username" placeholder="Username" />
+    <label for="login-password">Password</label>
+    <input type="password" id="login-password" placeholder="Password" />
+    <button>
+   <a href="https://collegedunia.com/college/13523-ganadipathy-tulsis-jain-engineering-college-gtec-vellore"class="button-class">login</a>
+   </button>
+  </form>
 
-<p>if you click this "login" button,the form-data will be sent to a page called "/action_page.php".</p>
+  <script>
+    function login() {
+      const username = document.getElementById('login-username').value;
+      const password = document.getElementById('login-password').value;
+      const savedUsername = localStorage.getItem('savedUsername');
+      const savedPassword = localStorage.getItem('savedPassword');
+
+      if (username === savedUsername && password === savedPassword) {
+        alert('Login successful!');
+        window.location.href = "http://www.gtec.ac.in/";
+      } else {
+        alert('Incorrect login. Try again!');
+      }
+    }
+  </script>
+</body>
+</html>
