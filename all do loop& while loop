@@ -1,0 +1,44 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        
+        System.out.println("--- Do-While Loop Example ---"); 
+        int count = 0;
+        do {
+            System.out.println("Do-while loop iteration: " + count);
+            count++;
+        } while (count < 3); 
+        System.out.println("Do-while loop finished!");
+
+        
+        System.out.println("\n--- While Loop Example ---"); 
+        int i = 0;
+        while (i < 3) {
+            System.out.println("While loop iteration: " + i); 
+            i++; 
+        }
+        System.out.println("While loop finished!");
+
+     
+        System.out.println("santhosh"); 
+        for (int j = 0; j < 3; j++) {
+            System.out.println("For loop iteration: " + j); 
+        }
+        System.out.println("For loop finished!");
+
+        
+        System.out.println("\n--- Nested Loops Example (For inside While) ---");
+        int outerCount = 0;
+        while (outerCount < 2) {
+            System.out.println("Outer loop iteration (while): " + outerCount); 
+            for (int k = 0; k < 2; k++) {
+                System.out.println("  Inner loop iteration (for): " + k); 
+            }
+            outerCount++;
+        }
+        System.out.println("Nested loops finished!");
+
+        System.out.println("\nAll loop examples completed.");
+    }
+}
