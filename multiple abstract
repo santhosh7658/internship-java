@@ -1,0 +1,18 @@
+abstract class Kannan{  
+  abstract void run();  
+}  
+class santhi extends Kannan{
+  void run(){System.out.println("santhi is kannan wife");}
+}
+class santhosh extends Kannan{  
+void run(){System.out.println("santhosh is kannan son");}  
+}
+ 
+public class Main{
+public static void main(String args[]){  
+ Kannan obj = new santhosh();   
+ Kannan obj1 = new santhi();
+ obj.run();
+ obj1.run();
+}  
+} 
