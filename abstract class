@@ -1,0 +1,14 @@
+
+abstract class Kannan{  
+  abstract void run();  
+}  
+class santhosh extends Kannan{  
+void run(){System.out.println("santhosh is kannan son");}  
+}
+ 
+public class Main{
+public static void main(String args[]){  
+ Kannan obj = new santhosh();   
+ obj.run();
+}  
+} 
