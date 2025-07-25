@@ -1,0 +1,31 @@
+interface Car {  
+    void accelerates();  
+}  
+interface Body {  
+    void Throttle();  
+}  
+class Skyline implements Car,Body  {  
+    public void accelerates() {  
+        System.out.println("skyline accelerates...");  
+    }  
+    public void Throttle() {  
+        System.out.println("accelerates using throtte...");  
+    }  
+}  
+class Tjz implements Car, Body {  
+    public void accelerates() {  
+        System.out.println("2JZ acceleration....");  
+    }  
+    public void Throttle() {  
+        System.out.println("2jz accelerates using throttle body...");  
+    }  
+}  
+public class Main {  
+    public static void main(String[] args) {  
+        Skyline Skyline = new Skyline();  
+        Tjz Tjz = new Tjz
+        Skyline.Throttle();   
+        Tjz.accelerates();  
+        Tjz.Throttle(); 
+    }  
+}  
