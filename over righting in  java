@@ -1,0 +1,10 @@
+class laptop{  
+  void santa(){System.out.println("laptop it using by santa");}  
+}    
+class hp extends laptop{}
+public class Main{
+  public static void main(String args[]){  
+  hp obj = new hp();  
+  obj.santa();  
+  }  
+}
