@@ -1,31 +1,64 @@
-interface Car {  
-    void accelerates();  
-}  
-interface Body {  
-    void Throttle();  
-}  
-class Skyline implements Car,Body  {  
-    public void accelerates() {  
-        System.out.println("skyline accelerates...");  
-    }  
-    public void Throttle() {  
-        System.out.println("accelerates using throtte...");  
-    }  
-}  
-class Tjz implements Car, Body {  
-    public void accelerates() {  
-        System.out.println("2JZ acceleration....");  
-    }  
-    public void Throttle() {  
-        System.out.println("2jz accelerates using throttle body...");  
-    }  
-}  
-public class Main {  
-    public static void main(String[] args) {  
-        Skyline Skyline = new Skyline();  
-        Tjz Tjz = new Tjz
-        Skyline.Throttle();   
-        Tjz.accelerates();  
-        Tjz.Throttle(); 
-    }  
-}  
+interface Cars {
+    void bmw();
+}
+
+interface Engine {
+    void use();
+}
+
+interface Fuel {
+    void burn(); 
+}
+
+class Ready implements Cars, Engine, Fuel {
+    public void bmw() {
+        System.out.println("BMW car launched in 1928");
+    }
+    public void use() {
+        System.out.println("Engine horsepower is 580 RPM");
+    }
+    public void burn() {
+        System.out.println("10 liter diesel fuel tank");
+    }
+}
+
+class Race implements Cars, Engine, Fuel {
+    public void bmw() {
+        System.out.println("Race car launched in 1989");
+    }
+    public void use() {
+        System.out.println("Engine power is 1200 RPM");
+    }
+    public void burn() {
+        System.out.println("8.5 liter diesel tank");
+    }
+}
+
+class Track implements Cars, Engine, Fuel {
+    public void bmw() {
+        System.out.println("Racing on the track");
+    }
+    public void use() {
+        System.out.println("Enjoy the race in terrain");
+    }
+    public void burn() {
+        System.out.println("2.8 liter diesel");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Ready ready = new Ready();
+        Race race = new Race();
+        Track track = new Track(
+        ready.bmw();
+        ready.use();
+        ready.burn();
+        race.bmw();
+        race.use();
+        race.burn();
+        track.bmw();
+        track.use();
+        track.burn();
+    }
+}
