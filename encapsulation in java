@@ -1,0 +1,51 @@
+class Employee_details{  
+private long emp;  
+private String Name,Email;  
+private float Salary;   
+private long mobile_no;
+public long getemp() {  
+    return emp;  
+}  
+public void setemp(long emp) {  
+    this.emp = emp;  
+}  
+public String getName() {  
+    return Name;  
+}  
+public void setName(String name) {  
+    this.Name = name;  
+}  
+public String getEmail() {  
+    return Email;  
+}  
+public void setEmail(String email) {  
+    this.Email = email;  
+}  
+public long getmobile_no() {
+    return mobile_no;
+}
+public void setmobile_no(long mobile_no){
+    this.mobile_no = mobile_no;
+}
+public float getSalary() {  
+    return Salary;  
+}  
+public void setSalary(float salary) {  
+    this.Salary = Salary;  
+}  
+}    
+public class Main {  
+public static void main(String[] args) {  
+    Employee_details emp=new Employee_details();   
+    emp.setemp(67285L);  
+    emp.setName("Thulasiraman S");  
+    emp.setEmail("thulasiramans2710@gmail.com"); 
+    emp.setmobile_no(9360790456L);
+    emp.setSalary(21000f);   
+    System.out.println(emp.getemp()+" ");
+    System.out.println(emp.getName()+" ");
+    System.out.println(emp.getEmail()+" ");
+    System.out.println(emp.getmobile_no()+" ");
+    System.out.println(emp.getSalary()+" ");  
+}  
+}
