@@ -1,19 +1,37 @@
 public class Main {
-    public static void main(String[] args){
-        for (int days = 1; days <= 7; days++) {
-            if (days >= 1 && days <= 6) {
-                switch(days){
-                    case 1: System.out.println("Monday"); break;
-                    case 2: System.out.println("Tuesday"); break;
-                    case 3: System.out.println("Wednesday"); break;
-                    case 4: System.out.println("Thursday"); break;
-                    case 5: System.out.println("Friday"); break;
-                    case 6: System.out.println("Saturday"); break;
-                    case 7: System.out.println("Sunday"); break;
-                }
-            } else {
-                System.out.println("Invalid day");
-            }
+    public enum Day {
+        Sun, Mon, Tue, Wed, Thu, Fri, Sat
+    }
+
+    public static void main(String[] args) {
+        Day day1 = Day.Sun;
+        Day day2 = Day.Mon;
+        Day day3 = Day.Tue;
+        Day day4 = Day.Wed;
+        Day day5 = Day.Thu;
+        Day day6 = Day.Fri;
+        Day day7 = Day.Sat;
+
+        if (day1 == Day.Sun) {
+            System.out.println("Sunday");
+        }
+        if (day2 == Day.Mon) {
+            System.out.println("Monday");
+        }
+        if (day3 == Day.Tue) {
+            System.out.println("Tuesday");
+        }
+        if (day4 == Day.Wed) {
+            System.out.println("Wednesday");
+        }
+        if (day5 == Day.Thu) {
+            System.out.println("Thursday");
+        }
+        if (day6 == Day.Fri) {
+            System.out.println("Friday");
+        }
+        if (day7 == Day.Sat) {
+            System.out.println("Saturday");
         }
     }
 }
